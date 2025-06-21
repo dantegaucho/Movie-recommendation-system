@@ -1,93 +1,90 @@
 
 # Movie Recommendation System
-![Banner](LINK)
 
-## Project Overview
+## Table of Contents
 
-This project builds a **personalized movie recommendation system** that suggests the top 5 movies to a user based on their previous ratings. The repository presents a full-featured movie recommendation system that personalizes suggestions based on user ratings. It implements a range of algorithms from basic collaborative filtering to advanced hybrid methods combining traditional ML and deep learning.
+- [Overview](#overview)
+- [Business Understanding](#business-understanding)
+- [Data Understanding](#data-understanding)
+- [Data Preparation](#data-preparation)
+- [Modeling](#modeling)
+- [Evaluation](#evaluation)
+- [Deployment](#deployment)
+ 
+## Overview
 
-The system is designed for scalability and reproducibility, with clear separation between data, models, and visualizations.
-
----
-
-## Why This Matters
-
-With the ever-growing number of movies, users often find it difficult to decide what to watch. This system uses intelligent algorithms to recommend movies that align with each user's unique preferences.
-
-## Repository Structure
-
-```
-.
-├── data/                      # Dataset files (download manually)
-├── notebooks/
-│   └── index.ipynb        # Main notebook with all code and analysis
-├── scripts/                   # Optional helper scripts (e.g., for data organization)
-├── Images/                    # Visuals used in notebook or presentation
-├── requirements.txt           # Python dependencies
-├── presentation.pdf           # Final project presentation [link below]
-└── README.md                  # This file
-```
+This project implements a personalized movie recommendation engine that suggests the top 5 movies to a user based on their previous ratings. Leveraging machine learning algorithms such as K-Nearest Neighbors (KNN), Singular Value Decomposition (SVD), and Convolutional Neural Networks (CNN), the system is designed for scalability and reproducibility. All code and analysis are provided in Jupyter notebooks for transparency and easy experimentation.
 
 ---
 
-## Data Science Workflow
+## Business Understanding
 
-The project follows these standard data science steps:
+With the overwhelming number of movies available today, users often struggle to choose what to watch next. Businesses and platforms that provide effective recommendation systems can improve user satisfaction and engagement by personalizing content delivery, ultimately increasing retention and watch time.
 
-1. **Data Collection & Loading** – MovieLens dataset is used.
-2. **Exploratory Data Analysis (EDA)** – Visualizations and statistics explore movie trends, genres, and user behavior.
-3. **Data Preprocessing** – Cleaning, merging, encoding, and transforming the dataset to prepare it for modeling.
-4. **Model Development**:
-   - **K-Nearest Neighbors (KNN)** for memory-based collaborative filtering
-   - **Singular Value Decomposition (SVD)** via Surprise library
-   - **Convolutional Neural Network (CNN)** based deep recommender
-5. **Hybrid Model Integration** – Combines the strengths of multiple models to improve accuracy.
-6. **Evaluation** – RMSE and user-level predictions guide model comparison and improvement.
+*Objectives*
+1. To analyze and visualize user preferences and movie trends using the provided ratings and metadata.
+2. To implement and evaluate collaborative filtering and matrix factorization models for generating accurate, personalized movie recommendations.
+3. To develop a recommendation system that uses past ratings to give personalised movie recommendations.
+---
 
-All steps are demonstrated in the Jupyter notebook: `index.ipynb`.
+## Data Understanding
+
+- **Dataset:** [MovieLens dataset](https://grouplens.org/datasets/movielens/)
+- **Files Used:** `ratings.csv`, `movies.csv`
+- **Exploration:** Initial analysis includes exploring user behavior, movie popularity, genre distributions, and sparsity patterns in user ratings.
 
 ---
 
-## Project Links
+## Data Preparation
 
-- PRESENTATION [Presentation (PDF)](LINK)
-- DATASET [MovieLens Dataset](LINK)
-- NOTEBOOK [Notebook Preview](./PATH)
+- **Cleaning:** Handling missing values and filtering users/movies with insufficient data.
+- **Merging:** Combining movie and rating data for unified analysis.
+- **Encoding:** Transforming categorical data and scaling features where needed.
+- **Splitting:** Partitioning data into training and test sets for modeling.
 
 ---
 
-## Navigation Instructions
+## Modeling
 
-To explore  this project:
+- **K-Nearest Neighbors (KNN):** Memory-based collaborative filtering to find similar users or movies.
+- **Singular Value Decomposition (SVD):** Matrix factorization for latent feature extraction using the Surprise library.
+- **Convolutional Neural Network (CNN):** Deep learning-based recommender architecture.
+- **Hybrid Integration:** Blending models to leverage strengths and improve recommendations.
 
-1. **Download Dataset**  
-   Visit the [MovieLens website](https://grouplens.org/datasets/movielens/) and download the 100k or 1M dataset. Place `ratings.csv` and `movies.csv` inside the `data/` folder.
+---
 
-2. **Install Dependencies**  
-   Create a virtual environment (optional) and run:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## Evaluation
 
-3. **Launch the Notebook**  
-   Open the notebook with:
-   ```bash
-   jupyter notebook/VScode notebooks/index.ipynb
-   ```
+- **Metrics:** RMSE (Root Mean Squared Error) for prediction accuracy.
+- **Validation:** Comparing models using cross-validation and visualizing user-level predictions.
+- **Selection:** Choosing the best-performing model (or hybrid) based on accuracy and robustness.
 
-4. **Follow the Steps**  
-   Each section is clearly labeled: EDA → Modeling → Evaluation → Hybrid Integration
+---
+
+## Deployment
+
+- **Notebook Usage:** All steps are reproducible in `notebooks/index.ipynb`.
+- **Instructions:**
+  1. Download the MovieLens dataset and place `ratings.csv` and `movies.csv` in the `data/` folder.
+  2. Install dependencies:
+      ```bash
+      pip install -r requirements.txt
+      ```
+  3. Launch the notebook:
+      ```bash
+      jupyter notebook notebooks/index.ipynb
+      ```
+  4. Follow the notebook steps: Data Understanding → Preparation → Modeling → Evaluation → Hybrid Integration
 
 ---
 
 ## Credits
 
-- Created by 
-1. Daniel Mutiso(GITHUB LINK)
-2. Teresia Wanjiku(GITHUB LINK)
-3. Meggy Donna(GITHUB LINK)
+- Daniel Mutiso [Github Link](https://github.com/dantegaucho)
+- Teresia Wanjiku [Github Link](https://github.com/tkariuki227)
+- Meggy Donna [GitHub](https://github.com/MegAtaro)
 
-- Based on the [MovieLens](LINK/) dataset and public ML techniques
+Based on the [MovieLens dataset](https://grouplens.org/datasets/movielens/100k/).
 
 ---
 
