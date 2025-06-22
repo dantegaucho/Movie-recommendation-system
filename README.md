@@ -1,6 +1,6 @@
 
 # Movie Recommendation System
-![Movie](https://github.com/dantegaucho/Movie-recommendation-system/blob/movie_studio/Images/Ai_movie_girl.jpg)
+![Movie](Images/Ai_movie_girl.jpg)
 
 ## Table of Contents
 
@@ -22,7 +22,7 @@ This project implements a personalized movie recommendation engine that suggests
 
 With the overwhelming number of movies available today, users often struggle to choose what to watch next. Businesses and platforms that provide effective recommendation systems can improve user satisfaction and engagement by personalizing content delivery, ultimately increasing retention and watch time.
 
-![Image](https://github.com/dantegaucho/Movie-recommendation-system/blob/movie_studio/Images/movie_3D.jpg)
+![Image](Images/movie_3D.jpg)
 
 *Objectives*
 1. To analyze and visualize user preferences and movie trends using the provided ratings and metadata.
@@ -61,7 +61,7 @@ Example Entries:
 - timestamp: The time the rating was made (in Unix time format).
 The ratings dataset includes over 100,000 ratings from multiple users, enabling collaborative filtering and other machine learning techniques for recommendations.
 
-  ![image](https://github.com/dantegaucho/Movie-recommendation-system/blob/movie_studio/Images/Distribution%20of%20movies%20per%20genre.png)
+  ![image](Images/Distribution%20of%20movies%20per%20genre.png)
 
 ---
 
@@ -94,7 +94,22 @@ Data cleaning steps ensure the removal or handling of missing values, making the
 
 ---
 
-## Deployment
+## Model Deployment
+The trained recommendation model is deployed as an interactive web application using [Streamlit](https://streamlit.io/). Users can input their preferences and receive personalized movie recommendations in real time.
+
+- **Access:** Run the Streamlit app locally with:
+  ```bash
+  streamlit run app/streamlit_app.py
+  ```
+- **Features:** 
+  - User-friendly interface for entering ratings or selecting favorite genres.
+  - Displays top recommended movies instantly.
+  - Visualizations of recommendation results and user history.
+  ```bash
+  run recommender_app.py
+  ```
+
+See the `app/streamlit_app.py` file for deployment details.
 
 - **Notebook Usage:** All steps are reproducible in `notebooks/index.ipynb`.
 - **Instructions:**
