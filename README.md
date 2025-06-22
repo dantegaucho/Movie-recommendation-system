@@ -113,11 +113,12 @@ Data cleaning steps ensure the removal or handling of missing values, making the
 
 ## Credits
 
-- Daniel Mutiso [Github Link](https://github.com/dantegaucho)
-- Teresia Wanjiku [Github Link](https://github.com/tkariuki227)
-- Meggy Donna [GitHub](https://github.com/MegAtaro)
+- [Daniel Mutiso](https://github.com/dantegaucho)
+- [Teresia Kariuki](https://github.com/tkariuki227)
+- [Meggy Donna](https://github.com/MegAtaro)
 
 Based on the [MovieLens dataset](https://grouplens.org/datasets/movielens/100k/).
+
 
 ---
 
